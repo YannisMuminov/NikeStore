@@ -193,7 +193,7 @@ nav {
 
 .product {
     background: whitesmoke;
-    position: relative;
+     
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
      
 }
@@ -285,7 +285,7 @@ label {
 }
 
 .productDetails {
-    position: absolute;
+    
     top: 10%;
     right: 0;
     width: 40%;
