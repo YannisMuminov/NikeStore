@@ -91,17 +91,14 @@ const wrapper = document.querySelector(".sliderWrapper");
  menuItem.forEach((item, index) => {
     item.addEventListener('click',  () => {
 
-        //Изменить текущий слайд
         wrapper.style.transform = `translateX(${-100 * index}vw)`
          
-        //Изменить выбраный продукт
         choosenProduct = products[index] 
             
         productTitle.textContent = choosenProduct.title;
         productPrice.textContent = "$" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
 
-      //Присвоить новые цвета
         currentProductColor.forEach((color, index) => {
           color.style.backgroundColor = choosenProduct.colors[index].code;
         });
@@ -140,4 +137,5 @@ productButton.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
   payment.style.display = "none"
+
 })
